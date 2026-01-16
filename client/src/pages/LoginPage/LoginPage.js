@@ -256,13 +256,13 @@ const handleNoAccountClick = (e) => {
                 <label htmlFor="password" className="text-sm font-medium text-gray-700">
                   Password
                 </label>
-                <a 
-                  href="#" 
+                <button 
+                  type="button"
                   className="text-sm text-green-600 hover:text-green-800"
                   onClick={handleForgotPasswordClick}
                 >
                   Forgot password? 
-                </a>
+                </button>
               </div>
               <div className="relative">
               <input
@@ -358,13 +358,13 @@ const handleNoAccountClick = (e) => {
           
           <div className="mt-8 text-center relative">
             <p className="text-sm text-gray-600">
-              <a 
-                href="#" 
+              <button 
+                type="button"
                 className="font-medium text-green-600 hover:text-green-500"
                 onClick={handleNoAccountClick}
               >
                 Don't have an account?
-              </a>
+              </button>
             </p>
             
             {showMessage && (
