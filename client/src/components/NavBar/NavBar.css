@@ -1,0 +1,67 @@
+/* Global styles for the header */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #6e7dff, #5e6ef7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo styles */
+  .logo h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+  }
+  
+  /* Navigation menu */
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .navigation ul li {
+    font-size: 18px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navigation ul li a:hover {
+    color: #ffb84d;
+  }
+  
+  /* Add some padding to the body to prevent content from being hidden under the header */
+  body {
+    padding-top: 80px;
+  }
+  
